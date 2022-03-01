@@ -1,2 +1,2 @@
-# suiss
+# Switzerland
 Опознай Швейцария!
