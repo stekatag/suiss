@@ -69,9 +69,15 @@ body {
   overflow-x: hidden;
 }
 
-/* ::selection {
-  background: #ffd8a8;
-} */
+::selection {
+  background: #ff9292ca;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e622228e;
+  transition: all 200ms;
+}
 
 /******************************/
 /* GENERAL REUSABLE COMPONENTS */
@@ -172,6 +178,7 @@ section {
 
 .btn--form {
   background-color: #450a0a;
+  font-family: inherit;
   color: #fdf2e9;
   align-self: flex-start;
 }
@@ -231,6 +238,7 @@ main {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 3.2rem;
 }
