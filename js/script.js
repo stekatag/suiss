@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(".main-nav-list a");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
