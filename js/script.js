@@ -1,4 +1,16 @@
 ///////////////////////////////////////////////////////////
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const btnOpenEl = document.querySelector(".btn-mobile-nav");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+  btnOpenEl.classList.toggle("btn-open");
+});
+
+///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll(".main-nav-list a");
@@ -20,6 +32,9 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+
+    headerEl.classList.toggle("nav-open");
+    btnOpenEl.classList.toggle("btn-open");
   });
 });
 
@@ -28,15 +43,3 @@ allLinks.forEach(function (link) {
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
-
-///////////////////////////////////////////////////////////
-// Make mobile navigation work
-
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
-const btnOpenEl = document.querySelector(".btn-mobile-nav");
-
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-  btnOpenEl.classList.toggle("btn-open");
-});
