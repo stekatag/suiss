@@ -62,11 +62,15 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  display: flex;
+  /* display: flex; */
 
   /* Works only if there is nothing absolutely 
   positioned in relation to the body */
   overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
 }
 
 ::selection {

@@ -1,0 +1,124 @@
+/******************************/
+/* BELOW 944x (Tablets)
+/******************************/
+
+@media only screen and (max-width: 59em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+
+  body {
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 10001;
+  }
+
+  .header {
+    background-color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hiding the nav without display: none */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .header.nav-open {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .btn-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .btn-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/******************************/
+/* BELOW 704px (Smaller tablets)
+/******************************/
+
+@media (max-width: 44em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    row-gap: 3.2rem;
+  }
+
+  .gallery a:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .about-info:last-child {
+    grid-row: 3;
+    margin-top: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
+
+/******************************/
+/* BELOW 544px (Phones)
+/******************************/
+
+@media (max-width: 34em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+}

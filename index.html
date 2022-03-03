@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script
       type="module"
@@ -32,153 +33,161 @@
     <title>Швейцария</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#hero">
-        <img
-          src="img/logo.svg"
-          onerror="this.onerror=null; this.src='img/logo.png'"
-          alt="Switzerland logo"
-          class="logo"
-        />
-      </a>
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+    <div class="main-container">
+      <header class="header">
+        <a href="#hero">
+          <img
+            src="img/logo.svg"
+            onerror="this.onerror=null; this.src='img/logo.png'"
+            alt="Switzerland logo"
+            class="logo"
+          />
+        </a>
 
-      <nav>
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#hero">Начало</a></li>
-          <li><a class="main-nav-link" href="#gallery">Галерия</a></li>
-          <li>
-            <a class="main-nav-link" href="#about">Повече за</a>
-          </li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Контакти</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero-section" id="hero">
-        <div class="hero-container">
-          <h1 class="heading-primary">Опознай Швейцария!</h1>
-          <p class="hero-description">
-            Искаш да опознаеш държавата? Екскурзия или почивка? Ние ще ти
-            помогнем!
-          </p>
-
-          <a href="#cta" class="btn btn--full">Виж повече</a>
-        </div>
-      </section>
-
-      <section class="gallery-section" id="gallery">
-        <div class="container">
-          <h2 class="heading-secondary">Галерия</h2>
-          <div class="gallery grid--3-cols">
-            <a href="img/image1.jpg">
-              <img class="gallery-img" src="img/image1.jpg" alt="image1" />
-            </a>
-            <a href="img/image2.jpg">
-              <img class="gallery-img" src="img/image2.jpg" alt="image2" />
-            </a>
-            <a href="img/image3.jpg">
-              <img class="gallery-img" src="img/image3.jpg" alt="image3" />
-            </a>
-            <a href="img/image4.jpg">
-              <img class="gallery-img" src="img/image4.jpg" alt="image4" />
-            </a>
-            <a href="img/image5.jpg">
-              <img class="gallery-img" src="img/image5.jpg" alt="image5" />
-            </a>
-            <a href="img/image6.jpg">
-              <img class="gallery-img" src="img/image6.jpg" alt="image6" />
-            </a>
-            <a href="img/image7.jpg">
-              <img class="gallery-img" src="img/image7.jpg" alt="image7" />
-            </a>
-            <a href="img/image8.jpg">
-              <img class="gallery-img" src="img/image8.jpg" alt="image8" />
-            </a>
-            <a href="img/image9.jpg">
-              <img class="gallery-img" src="img/image9.jpg" alt="image9" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-section" id="about">
-        <div class="container">
-          <h2 class="heading-secondary heading-about">Повече за Швейцария</h2>
-          <div class="grid grid--2-cols grid--center-v">
-            <p class="about-info">
-              Швейцария е малка вътрешноконтинентална страна с планински релеф.
-              Алпийският релеф е изразен от високи, остри върхове, вечни снегове
-              и ледници, живописни долини, бистри ледникови езера, тучни пасища
-              и гъсти гори.
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#hero">Начало</a></li>
+            <li><a class="main-nav-link" href="#gallery">Галерия</a></li>
+            <li>
+              <a class="main-nav-link" href="#about">Повече за</a>
+            </li>
+            <li><a class="main-nav-link nav-cta" href="#cta">Контакти</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="hero-section" id="hero">
+          <div class="hero-container">
+            <h1 class="heading-primary">Опознай Швейцария!</h1>
+            <p class="hero-description">
+              Искаш да опознаеш държавата? Екскурзия или почивка? Ние ще ти
+              помогнем!
             </p>
 
-            <img class="info-img" src="img/info-1.jpg" alt="info-1" />
-
-            <img class="info-img" src="img/info-2.jpg" alt="info-2" />
-
-            <p class="about-info">
-              Швейцария е водеща туристическа страна със силно развита база за
-              зимни спортове и туризъм. В Швейцария са и най-дългият кабинков
-              лифт - в района на Юнгфрау, от Гринделвалд-Грунд до Менлихен, и
-              най-високо разположената станция на кабинков лифт (3820 м н.в.) -
-              в Клайн Матерхорн.
-            </p>
+            <a href="#cta" class="btn btn--full">Виж повече</a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section-cta" id="cta">
-        <div class="container">
-          <div class="cta">
-            <div class="cta-text-box">
-              <h2 class="heading-secondary">Свържете се с нас</h2>
-
-              <form class="cta-form" action="#">
-                <div>
-                  <label for="full-name">Име и фамилия</label>
-                  <input
-                    id="full-name"
-                    type="text"
-                    placeholder="John Smith"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="email">Имейл адрес</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="me@example.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label for="textarea">Вашето съобщение</label>
-                  <textarea
-                    name="textarea"
-                    id="textarea"
-                    class="cta-textarea"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
-
-                <button class="btn btn--form">Изпрати</button>
-              </form>
+        <section class="gallery-section" id="gallery">
+          <div class="container">
+            <h2 class="heading-secondary">Галерия</h2>
+            <div class="gallery grid--3-cols">
+              <a href="img/image1.jpg" target="_blank">
+                <img class="gallery-img" src="img/image1.jpg" alt="image1" />
+              </a>
+              <a href="img/image2.jpg" target="_blank">
+                <img class="gallery-img" src="img/image2.jpg" alt="image2" />
+              </a>
+              <a href="img/image3.jpg" target="_blank">
+                <img class="gallery-img" src="img/image3.jpg" alt="image3" />
+              </a>
+              <a href="img/image4.jpg" target="_blank">
+                <img class="gallery-img" src="img/image4.jpg" alt="image4" />
+              </a>
+              <a href="img/image5.jpg" target="_blank">
+                <img class="gallery-img" src="img/image5.jpg" alt="image5" />
+              </a>
+              <a href="img/image6.jpg" target="_blank">
+                <img class="gallery-img" src="img/image6.jpg" alt="image6" />
+              </a>
+              <a href="img/image7.jpg" target="_blank">
+                <img class="gallery-img" src="img/image7.jpg" alt="image7" />
+              </a>
+              <a href="img/image8.jpg" target="_blank">
+                <img class="gallery-img" src="img/image8.jpg" alt="image8" />
+              </a>
+              <a href="img/image9.jpg" target="_blank">
+                <img class="gallery-img" src="img/image9.jpg" alt="image9" />
+              </a>
             </div>
-            <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Woman enjoying food"
-            ></div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <footer>Copyright © 2022 Stefan Gogov. All Rights Reserved.</footer>
-    </main>
+        <section class="about-section" id="about">
+          <div class="container">
+            <h2 class="heading-secondary heading-about">Повече за Швейцария</h2>
+            <div class="grid grid--2-cols grid--center-v">
+              <p class="about-info">
+                Швейцария е малка вътрешноконтинентална страна с планински
+                релеф. Алпийският релеф е изразен от високи, остри върхове,
+                вечни снегове и ледници, живописни долини, бистри ледникови
+                езера, тучни пасища и гъсти гори.
+              </p>
+
+              <img class="info-img" src="img/info-1.jpg" alt="info-1" />
+
+              <img class="info-img" src="img/info-2.jpg" alt="info-2" />
+
+              <p class="about-info">
+                Швейцария е водеща туристическа страна със силно развита база за
+                зимни спортове и туризъм. В Швейцария са и най-дългият кабинков
+                лифт - в района на Юнгфрау, от Гринделвалд-Грунд до Менлихен, и
+                най-високо разположената станция на кабинков лифт (3820 м н.в.)
+                - в Клайн Матерхорн.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-cta" id="cta">
+          <div class="container">
+            <div class="cta">
+              <div class="cta-text-box">
+                <h2 class="heading-secondary">Свържете се с нас</h2>
+
+                <form class="cta-form" action="#">
+                  <div>
+                    <label for="full-name">Име и фамилия</label>
+                    <input
+                      id="full-name"
+                      type="text"
+                      placeholder="John Smith"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="email">Имейл адрес</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="me@example.com"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="textarea">Вашето съобщение</label>
+                    <textarea
+                      name="textarea"
+                      id="textarea"
+                      class="cta-textarea"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+
+                  <button class="btn btn--form">Изпрати</button>
+                </form>
+              </div>
+              <div
+                class="cta-img-box"
+                role="img"
+                aria-label="Woman enjoying food"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          Copyright © <span class="year">2022</span> Stefan Gogov. All Rights
+          Reserved.
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

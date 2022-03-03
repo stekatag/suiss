@@ -22,3 +22,21 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+/////////////////////////////////////////////////////////
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const btnOpenEl = document.querySelector(".btn-mobile-nav");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+  btnOpenEl.classList.toggle("btn-open");
+});

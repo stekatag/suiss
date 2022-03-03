@@ -59,6 +59,25 @@
   background-color: #c92a2a;
 }
 
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fa5252;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /******************************/
 /* HERO SECTION*/
 /******************************/
@@ -140,6 +159,7 @@
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.24);
   border-radius: 9px;
 }
