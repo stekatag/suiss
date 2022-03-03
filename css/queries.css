@@ -73,6 +73,17 @@
 /******************************/
 
 @media (max-width: 44em) {
+  .container {
+    margin: auto 3.2rem auto 3.2rem;
+  }
+
+  .hero-container {
+    width: 100%;
+    margin: auto 3.2rem auto 3.2rem;
+    align-items: center;
+    text-align: center;
+  }
+
   .grid--3-cols {
     grid-template-columns: 1fr 1fr;
   }
